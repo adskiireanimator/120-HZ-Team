@@ -1,0 +1,101 @@
+#mydiv {
+  padding-top:20px;
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+#mydivthree {
+    padding-top:20px;
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#mydivthreeheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+#mydivtwo {
+  padding-top:20px;
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#mydivtwoheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+#mydivmain {
+  padding-top:20px;
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#mydivhmainheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+.navbar{
+  height:100%;
+  width: 160px;
+  position: fixed;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  background-color:#A069D6;
+  overflow-x: hidden;
+  padding-top:2px;
+}
+.navbar a{
+  padding: 6px 8px 6px 2px;
+  text-decoration: none;
+  font-size: 25px;
+  color:##999999;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover{
+  color:#f1f1f1;
+}
+.main{
+  position: absolute;
+  margin-left: 160px;
+  padding: 0px 10px;
+  z-index: -1;
+}
+
+@media screen and (max-height: 450px) {
+    .navbar {padding-top: 15px;}
+    .navbar a {font-size: 18px;}
+}
+.widget-title{
+  padding:0px 10px;
+    font-size:22px
+}
