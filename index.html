@@ -11,7 +11,7 @@
 
     <div class="navbar">
       <h2 class="widget-title">Операторы</h2>
-      <a href="#">something</a>
+      <a href="#" onmouseup="whichButton(event)" >something</a>
       <a href="#">something</a>
       <a href="#">something</a>
       <a href="#">something</a>
@@ -29,7 +29,7 @@
       <p>DIV</p>
       </div>
 
-      <div id="mydivthree">
+      <div id="mydivthree" onmouseup="whichButton(event);">
       <div id="mydivthreeheader">Click here to move</div>
       <p>Move</p>
       <p>this</p>
@@ -38,21 +38,44 @@
 
     </div>
     <div class="main">
-      <div id="mydivmain">
+      <div id="mydivmain" onmouseup="whichButton(event);">
       <div id="mydivhmainheader">Click here to move</div>
       <p>Move</p>
       <p>this</p>
       <p>DIV</p>
       </div>
-    </div>
+	  <script>
+var whichButton = function (e) {
+    // Handle different event models
+    var e = e || window.event;
+    var btnCode;
 
+    if ('object' === typeof e) {
+        btnCode = e.button;
+
+        switch (btnCode) {
+            case 0:
+                console.log('Нажата левая кнопка.');
+            break;
+
+            case 2:
+                alert('Нажата правая кнопка.');
+            break;
+
+        }
+    }
+}
+</script>
+
+<button onmouseup="whichButton(event);" oncontextmenu="event.preventDefault();">Нажмите кнопку мыши...</button>
+    </div>
 
 
 
     <script>
       require('./render.js');
     </script>
-    <script>//Make the DIV element draggagle:
+    <script>
     dragElement(document.getElementById("mydiv"));
     dragElement(document.getElementById("mydivtwo"));
     dragElement(document.getElementById("mydivthree"));
