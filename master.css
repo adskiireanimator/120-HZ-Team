@@ -1,5 +1,4 @@
 #mydiv {
-  padding-top:20px;
     position: absolute;
     z-index: 9;
     background-color: #f1f1f1;
@@ -15,7 +14,7 @@
     color: #fff;
 }
 #mydivthree {
-    padding-top:20px;
+
     position: absolute;
     z-index: 9;
     background-color: #f1f1f1;
@@ -31,9 +30,8 @@
     color: #fff;
 }
 #mydivtwo {
-  padding-top:20px;
     position: absolute;
-    z-index: 9;
+    z-index: 1000000000000;
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
     text-align: center;
@@ -42,12 +40,11 @@
 #mydivtwoheader {
     padding: 10px;
     cursor: move;
-    z-index: 10;
+    z-index: 10000000000000000000000;
     background-color: #2196F3;
     color: #fff;
 }
 #mydivmain {
-  padding-top:20px;
     position: absolute;
     z-index: 9;
     background-color: #f1f1f1;
@@ -85,10 +82,10 @@
   color:#f1f1f1;
 }
 .main{
-  position: absolute;
+  position: relative;
   margin-left: 160px;
   padding: 0px 10px;
-  z-index: -1;
+  z-index: 0;
 }
 
 @media screen and (max-height: 450px) {
@@ -98,4 +95,7 @@
 .widget-title{
   padding:0px 10px;
     font-size:22px
+}
+.widget-title:hover{
+	color:white;
 }
