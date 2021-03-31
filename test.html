@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>something</title>
+    <style>
+        .stylediv p:hover{
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+<div id="div1" class="stylediv">
+    <p onmouseup="dvoika()">двоичная система</p>
+    <p onmouseup="shest()">шестнадцатиричная система</p>
+    <p onmouseup="vosem()">восьмиричная система</p>
+</div>
+<script>
+    function dvoika(){
+        let num = Math.round(Math.random()*1000);
+        alert(num.toString(2))
+        let a = prompt(num);
+    
+        if (a==num.toString(2)){
+            alert("right");
+        }else{
+            alert("uncorrect");
+        }
+        
+    }
+    function shest(){
+        let num = Math.round(Math.random()*1000);
+        alert(num.toString(16))
+        let a = prompt(num);
+    
+        if (a==num.toString(16)){
+            alert("right");
+        }else{
+            alert("uncorrect");
+        }
+        
+    }
+    function vosem(){
+        let num = Math.round(Math.random()*1000);
+        alert(num.toString(8))
+        let a = prompt(num);
+    
+        if (a==num.toString(8)){
+            alert("right");
+        }else{
+            alert("uncorrect");
+        }
+        
+    }
+</script>
+<script>
+var div1 = document.getElementById("div1");
+console.log(div1.classList.item(0));
+</script>
+</body>
+</html>
